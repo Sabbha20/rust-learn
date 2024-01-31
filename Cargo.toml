@@ -1,4 +1,5 @@
-workspace = { members = ["src/o10_Enums", "src/o09_Structs_with_Methods", "src/o08_Structs", "src/o07_Ownerships", "src/o06_Functions", "src/o05_Conditionals", "src/o04_Loops", "src/o03_variables_and_constants", "src/o01_Primitive_Datatype", "src/o02_Compound_Datatype", "src/o11_Enums_impl", "src/o20_Generics"] }
+workspace = { members = ["src/o10_Enums", "src/o09_Structs_with_Methods", "src/o08_Structs", "src/o07_Ownerships", "src/o06_Functions", "src/o05_Conditionals", "src/o04_Loops", "src/o03_variables_and_constants", "src/o01_Primitive_Datatype", "src/o02_Compound_Datatype", "src/o11_Enums_impl", "src/bg001_userInput", "src/bg001_user_input", "src/o20_Generics"] }
+
 [package]
 name = "rust_learn"
 version = "0.1.0"
