@@ -11,7 +11,7 @@ fn main() {
     let s2 = s1.clone();
     println!("s1:\t{s1}");
 
-    // Ownership does not work with primitive type - int, float, boolean, char
+    // Ownership does not work with primitive/scalar type - int, float, boolean, char
     // here the values are copied and not moved.
     let n1 = 33;
     let n2 = n1;

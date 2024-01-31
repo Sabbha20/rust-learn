@@ -69,12 +69,18 @@ fn main() {
     // -------------------------------------------
     // let pt_2D = (2, 3);
     // let pt_3D = (4, 6, 7);
-
+    // #[derive(Debug)]
     struct Point_2D(i32, i32);
+    // #[derive(Debug)]
     struct Point_3D(i32, i32, i32);
 
+    
+    
     let pt1 = Point_2D(2, 3);
     let p2 = Point_3D(3, 4, 5);
+    
+    // println!("Point_2D: {:?}", pt1);
+    // println!("Point_3D: {:?}", p2);
 
     // Unit Structs
     struct ABC;

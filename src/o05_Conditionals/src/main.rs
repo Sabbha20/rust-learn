@@ -45,7 +45,7 @@ fn main() {
     //     80..=89 => grade = 'B',// 2nd arm    // These are known as arms
     //     70..=79 => grade = 'C',
     //     _ => grade = 'F'  // last arm        // default arm --> matches all the other conditions not mentioned
-    //     // There should not be any condition after default arm, they would be unreachable conditions
+    //    There should not be any condition after default arm, they would be unreachable conditions
     // };
     // __The above code can be written as____ //
     let gradem = match marks {
