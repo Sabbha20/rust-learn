@@ -20,6 +20,13 @@ fn main() {
         println!("{0}x{0} = {1}", pos+1, i*i);
     }
 
+    println!("\n\n\nSquares:\n=====================");
+    get_squares(10000);
+    println!("\n\n\nCubes:\n=====================");
+    get_cubes(10000);
+
+
+
 }
 
 
@@ -32,5 +39,28 @@ fn get_bananas(number:u32) -> String { //&'static str{
         3..=7 => "a few".to_string(),
         _ if number % 2 == 0 => "even number of".to_string(),
         _ => "many".to_string(),
+    }
+}
+
+// Implementing while loops
+
+fn get_squares(limit:i32) {
+    let mut num = 0;
+    while num*num <= limit{
+        println!("{0}x{0}\t= {1}", num, num*num);
+        num = num + 1;
+    }
+}
+
+// Implementing default loop
+
+fn get_cubes(limit:i32){
+    let mut num = 0;
+    loop{
+        println!("{0}x{0}x{0}\t= {1}", num, num*num*num);
+        num = num + 1;
+        if num*num*num > limit{
+            break;
+        }
     }
 }
