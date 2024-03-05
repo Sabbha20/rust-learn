@@ -9,7 +9,11 @@ struct Point<T, U>{
     x: T,
     y: U
 }
-
+impl<T, U> Point<T, U> {
+    fn create(x:T, y:U) -> Self{
+        Point{x, y}
+    }
+}
 impl<T, U> Point<T, U> {
     fn new(x:T, y: U) -> Point<T, U>{
         Point { x, y }
@@ -34,6 +38,8 @@ fn main() {
     // println!("Origin: {:?}", origin);
     // println!("Point B: {:?}", point_b)
     point_b.show_msg();
+    let point_c = Point::create(5, 7);
+    point_c.show_msg();
 
 
 }
