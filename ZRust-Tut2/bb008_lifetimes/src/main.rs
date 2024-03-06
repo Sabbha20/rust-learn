@@ -8,6 +8,12 @@ impl Person{
     fn create(name:String) -> Self{
         Person{name}
     }
+
+
+    fn get_name(&self) -> &str{
+    // fn get_name<'l> (&'l self) -> &'l str{
+        &self.name
+    }
 }
 
 #[derive(Debug)]
@@ -32,6 +38,16 @@ fn main() {
     let p2 = Person::create("Emma".to_string());
     let d2 = Dog::create("Tommy".to_string(), &p2);
     println!("{:?}", d2);
+
+    let mut a:&str;
+    {
+        let p3 = Person::create("Mark".to_string());
+        // a = p3.get_name();
+        a = p2.get_name();
+    }
+
+    println!("{:?}", a);
+    println!("{:?}", p2);
 
 }
 
