@@ -1,4 +1,3 @@
-workspace = { members = ["src/Z01_Threads", "src/Z02_Channels"] }
 [package]
 name = "zzz_Concerency"
 version = "0.1.0"
