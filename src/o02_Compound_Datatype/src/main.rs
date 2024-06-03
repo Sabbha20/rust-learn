@@ -26,7 +26,8 @@ fn main() {
     println!("ar2:\t{:?}", ar2);
 
     // Vectors
-    let v1 = vec![1, 2, 3, 4];
+    let mut v1 = vec![1, 2, 3, 4];
+    v1.append(&mut vec![5,6,7]);
     let vn = v1[2];
     println!("v1:\t{:?}", v1);
     println!("vn:\t{:?}", vn);
