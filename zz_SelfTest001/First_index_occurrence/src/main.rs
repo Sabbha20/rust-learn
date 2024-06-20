@@ -22,7 +22,7 @@ haystack and needle consist of only lowercase English characters.
 */
 fn main() {
     let s1 = String::from("sadbutsab");
-    println!("Index of 'sab' in {s1} is {}", str_str(s1.clone(), String::from("sab")));
+    println!("Index of 'sabu' in {s1} is {}", str_str(s1.clone(), String::from("sab")));
 }
 
 pub fn str_str(haystack: String, needle: String) -> i32 {
